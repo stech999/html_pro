@@ -1,0 +1,37 @@
+@import 'vars';
+
+
+//розовый цвет
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: $width_site;
+    color: $color_text;
+}
+
+.color_text {
+    color: $color_pre;
+}
+
+.nav {
+    display: flex;
+    gap: $gap;
+
+    &__link {
+        text-decoration: none;
+    }
+}
+
+.content {
+    display: flex;
+
+    &__item {
+        width: $width_site / 4;
+        height: $cont_height;
+        border: $border_style;
+    }
+}

@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 1200px;
+  color: green;
+}
+
+.color_text {
+  color: #8A2BE2;
+}
+
+.nav {
+  display: flex;
+  gap: 16px;
+}
+.nav__link {
+  text-decoration: none;
+}
+
+.content {
+  display: flex;
+}
+.content__item {
+  width: 300px;
+  height: 200px;
+  border: 1px solid #000;
+}/*# sourceMappingURL=style.css.map */
