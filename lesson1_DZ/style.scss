@@ -455,12 +455,16 @@ a {
     justify-content: center;
     align-items: center;
 }
+.subscribe__img{
+position: absolute;
+}
 
 .subscribe__left {
     display: flex;
     gap: 28px;
     width: 50%;
     padding-left: 230px;
+    position: relative;
 }
 
 .subscribe__left__icon {
@@ -474,6 +478,7 @@ a {
 
 .subscribe__right {
     width: 50%;
+    position: relative;
 }
 
 .subscribe__text_Vestibulum {
