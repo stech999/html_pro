@@ -21,6 +21,10 @@ a {
     text-decoration: none;
 }
 
+li {
+    list-style-type: none;
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -124,6 +128,7 @@ a {
     gap: 45px;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .top__menu__text {
@@ -133,15 +138,37 @@ a {
     font-weight: 700;
     text-transform: uppercase;
     color: $text__bl;
+    position: relative;
+
+    &:hover .mega-box {
+        display: flex;
+    }
 }
 
 .mega-box {
     background-color: $bg_white;
     border-radius: 5px;
-    border: 1px solid #e8e8e8;
+    border: 1px solid $gray;
     padding: 20px;
     position: absolute;
-    display: flex;
+    display: none;
+    left: -22px;
+    top: 30px;
+
+
+    &::before {
+        content: "";
+        display: block;
+        width: 16px;
+        height: 16px;
+        border-left: 1px solid $gray;
+        border-top: 1px solid $gray;
+        position: absolute;
+        top: -9px;
+        transform: rotate(45deg);
+        left: 30px;
+        background-color: $bg_white;
+    }
 }
 
 .mega-link {
@@ -152,10 +179,10 @@ a {
     font-weight: 400;
     letter-spacing: 0.025em;
     color: #646464;
-}
 
-.mega-link:hover {
-    color: $orange;
+    &:hover {
+        color: $orange;
+    }
 }
 
 .mega-title {
@@ -166,17 +193,46 @@ a {
     text-transform: uppercase;
     letter-spacing: 0.025em;
     color: #232323;
-    border-bottom: 1px solid #e8e8e8;
+    border-bottom: 1px solid $gray;
     margin-bottom: 16px;
     width: 235px;
 }
 
 .mega-item {
     margin-right: 46px;
+
+    &:last-of-type {
+        margin-right: 0px;
+    }
+
+    &-img {
+        width: 255px;
+        height: 118px;
+        background-color: #efefef;
+    }
+
+    &-img-text {
+        font-family: Lato;
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0.025em;
+        color: $bg_white;
+        position: absolute;
+        right: 30px;
+        top: 380px;
+    }
 }
 
-.mega-item:last-of-type {
-    margin-right: 0px;
+.last:hover .mega-box {
+    right: 0;
+    left: auto;
+}
+
+.last:hover .mega-box::before {
+    right: 30px;
+    left: auto;
 }
 
 /*-- arrivals --*/
@@ -409,7 +465,7 @@ details[open] summary {
     align-items: center;
     width: $width__100;
     height: 665px;
-    background-color: #e8e8e8;
+    background-color: $gray;
 }
 
 .text__banner {
