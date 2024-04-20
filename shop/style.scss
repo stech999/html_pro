@@ -273,6 +273,10 @@ li {
     }
 }
 
+.top__menu__link:hover {
+    color: $orange;
+}
+
 .mega-box {
     background-color: $bg_white;
     border-radius: 5px;
@@ -1650,7 +1654,7 @@ details[open] summary {
     line-height: 1.2;
     font-weight: 700;
     text-transform: uppercase;
-    color: #f16d7f;
+    color: $orange;
 }
 
 .item:hover .item-pic {
@@ -1930,12 +1934,13 @@ details[open] summary {
 }
 
 .sub__email_inp {
-    width: 314px;
+    width: 255px;
     height: 46px;
     background-color: #e1e1e1;
     border-radius: 23px;
     padding-left: 20px;
     border: aliceblue;
+    padding-right: 120px;
 }
 
 .sub__email_but {
@@ -2015,6 +2020,18 @@ details[open] summary {
     width: 150px;
     height: 180px;
     justify-content: space-between;
+}
+
+.contant__text__link {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #898989;
+}
+
+.contant__text__link:hover {
+    color: $orange;
 }
 
 .contact__block__right {
