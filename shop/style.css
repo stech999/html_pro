@@ -361,7 +361,7 @@ li {
   background-color: #f8f3f4;
   align-items: center;
   justify-content: center;
-  gap: 770px;
+  gap: 760px;
 }
 
 .arrivals__left {
@@ -374,12 +374,18 @@ li {
 }
 
 .arrivals__right {
+  display: flex;
   font-family: Lato;
   font-size: 14px;
   line-height: 20px;
   font-weight: 300;
   text-transform: uppercase;
   color: #636363;
+  gap: 10px;
+}
+
+.arrivals__cat__link:hover {
+  color: #f16d7f;
 }
 
 /*-- arrivals --*/
@@ -458,6 +464,10 @@ li {
   flex-direction: column;
 }
 
+.product__right {
+  z-index: 1;
+}
+
 .product__settings {
   display: flex;
   gap: 60px;
@@ -496,7 +506,22 @@ li {
   font-weight: 400;
   color: #6f6e6e;
   display: flex;
+  flex-direction: column;
   gap: 23px;
+}
+
+.product__settings__text__top {
+  display: flex;
+  gap: 10px;
+}
+
+.product__settings__text__bot {
+  display: flex;
+  gap: 10px;
+}
+
+.product__settings__text__link:hover {
+  color: #f16d7f;
 }
 
 .product__settings__text2 {
@@ -506,10 +531,13 @@ li {
   font-weight: 400;
   color: #6f6e6e;
   display: flex;
+  gap: 20px;
 }
 
 .product__settings__gap {
-  padding-right: 41px;
+  display: flex;
+  gap: 10px;
+  padding-right: 18px;
 }
 
 .product__settings__gap2 {
@@ -635,6 +663,10 @@ li {
   color: #c4c4c4;
 }
 
+.product__page__left__p:hover {
+  color: #f16d7f;
+}
+
 .product__page__right {
   width: 150px;
   height: 44px;
@@ -648,6 +680,12 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.product__page__right:hover {
+  color: #ffffff;
+  background: #f16d7f;
+  transition: 0.5s;
 }
 
 /*-- product --*/
@@ -756,6 +794,12 @@ li {
   border: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
+}
+
+.reg__cont:hover {
+  transition: 0.5s;
+  background: #f16d7f;
+  color: #ffffff;
 }
 
 .login {
@@ -1307,7 +1351,6 @@ summary {
 
 details[open] summary {
   border-bottom: 1px solid #aaa;
-  margin-bottom: 0.5em;
 }
 
 .choose__choise__count {
@@ -1922,6 +1965,12 @@ details[open] summary {
   align-items: center;
 }
 
+.sub__email_but:hover {
+  transition: 0.5s;
+  background: #ffffff;
+  color: #f16d7f;
+}
+
 /*-- subscribe --*/
 /*-- contact --*/
 .contact {
@@ -2067,4 +2116,62 @@ details[open] summary {
 
 .svg__img__face {
   width: 10px;
+}
+
+.product__brand {
+  position: relative;
+}
+
+.test__det {
+  display: flex;
+  flex-direction: column;
+  width: 243px;
+  position: relative;
+}
+.test__det[open] summary {
+  transition: 1.5s;
+  border-bottom: 1px solid #aaa;
+  padding-left: 20px;
+}
+
+.test__pol {
+  width: 5px;
+  border: 1px solid #f16d7f;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  background-color: #f16d7f;
+  z-index: 1;
+}
+
+.test__pol2 {
+  width: 5px;
+  border: 1px solid #eaeaea;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  background-color: #eaeaea;
+  z-index: 1;
+}
+
+.test__summ {
+  display: flex;
+  padding-left: 11px;
+  flex-direction: column;
+  gap: 20px;
+  font-family: Lato;
+  font-size: 18px;
+  line-height: 33px;
+  font-weight: 400;
+  color: #6f6e6e;
+}
+
+.test__summ__tit {
+  display: flex;
+  padding-left: 20px;
+  flex-direction: column;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 700;
+  color: #6f6e6e;
 }/*# sourceMappingURL=style.css.map */
