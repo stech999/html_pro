@@ -30,6 +30,17 @@ li {
   background-color: #ffffff;
 }
 
+@supports (display: grid) {
+  .header {
+    display: grid;
+    grid-template-columns: 208px 753px 32px 130px;
+    grid-template-rows: 100%;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    background-color: #ffffff;
+  }
+}
 .brand {
   display: flex;
   justify-content: center;
@@ -2174,4 +2185,14 @@ details[open] summary {
   font-size: 18px;
   font-weight: 700;
   color: #6f6e6e;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 200px 300px 200px;
+  grid-template-rows: 150px;
+}
+
+.ietms {
+  border: 1px solid #000;
 }/*# sourceMappingURL=style.css.map */

@@ -33,6 +33,17 @@ li {
     background-color: $bg_white;
 }
 
+@supports (display: grid) {
+    .header {
+        display: grid;
+        grid-template-columns: 208px 753px 32px 130px;
+        grid-template-rows: $width__100;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        background-color: $bg_white;
+    }
+}
 
 .brand {
     display: flex;
@@ -258,6 +269,17 @@ li {
     justify-content: center;
     position: relative;
 }
+
+// @supports (display: grid) {
+//     .top__menu {
+//         display: grid;
+//         grid-template-columns: repeat(7, 14%);
+//         grid-template-rows: 51px;
+//         justify-items: center;
+//         align-items: center;
+//         justify-content: center;
+//     }
+// }
 
 .top__menu__text {
     font-family: $lato;
@@ -2214,4 +2236,14 @@ details[open] summary {
     font-size: 18px;
     font-weight: 700;
     color: #6f6e6e;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 200px 300px 200px;
+    grid-template-rows: 150px;
+}
+
+.ietms {
+    border: 1px solid #000;
 }
