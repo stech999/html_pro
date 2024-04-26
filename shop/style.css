@@ -2197,6 +2197,10 @@ details[open] summary {
   color: #6f6e6e;
 }
 
+.test__summ__link:hover {
+  color: #f16d7f;
+}
+
 .test__summ__tit {
   display: flex;
   padding-left: 20px;
